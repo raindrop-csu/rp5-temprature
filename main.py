@@ -1,7 +1,7 @@
 import xlrd
 import xlwt
 
-workbook = xlrd.open_workbook(r"C:\Users\zms\Desktop\气象数据\长沙1.xls")
+workbook = xlrd.open_workbook(r"这里写输入地址")
 table = workbook.sheet_by_name("sheet")
 t = 0
 new_workbook = xlwt.Workbook()
@@ -78,4 +78,4 @@ while True:
     if(t == 31133):
         break
 print(t)
-new_workbook.save(r"C:\Users\zms\Desktop\气象数据\长沙2.xls")
+new_workbook.save(r"这里写输出地址")
